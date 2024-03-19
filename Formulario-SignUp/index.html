@@ -1,19 +1,78 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documento</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        text-align: center;
+      }
 
-<body>
-    <section>
-        <form action="enviar datos">
-            <p align="center">Página web vacía</p>
-        </form>
+      h2 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background-color: rgb(92, 224, 65);
+        border: solid 4px;
+        border-radius: 10px;
+        padding: 0 5px 2px 5px;
+      }
+
+      fieldset {
+        border: solid 5px;
+        border-radius: 15px;
+      }
+
+      form {
+        align-items: center;
+        width: 50%;
+        height: 100%;
+      }
+
+      label {
+        font-family: helvetica;
+      }
+
+      input {
+        border-radius: 5px;
+        background-color: lightgreen;
+      }
+
+      button {
+        border-radius: 7px;
+        padding: 5px;
+      }
+
+      button::selection {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section align="center">
+      <form align="center">
+        <fieldset align="center">
+          <legend><h2>Formulario de registro</h2></legend>
+
+          <label for="username">Nombre de usuario</label> <br />
+          <input id="username" type="username" required="true" /> <br /><br />
+
+          <label for="email">Correo electrónico</label> <br />
+          <input id="email" type="email" required="true" /> <br /><br />
+
+          <label for="password">Contraseña</label> <br />
+          <input id="password" type="password" required="true" /> <br /><br />
+
+          <button type="submit" title="Registrarse">Enviar</button> <br /><br />
+
+          <details>
+            <summary>¿Olvidaste tu Contraseña?</summary>
+            <a href="google.com">google srsgw</a>
+          </details>
+        </fieldset>
+      </form>
     </section>
-</body>
+    <script src="scrip.js"></script>
+  </body>
 </html>
