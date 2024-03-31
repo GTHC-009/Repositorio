@@ -1,4 +1,7 @@
-html {text-align: center;}
+html {
+    text-align: center;
+    align-content: center;
+}
 
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
